@@ -1,0 +1,27 @@
+button {
+  background-color: #a1e6db;
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  font-size: 15px;
+  cursor: pointer;
+  border-radius: 12px;
+  margin-top: 20px;
+}
+
+.randomButton {
+  margin-left: 30px;
+
+}
+
+button:hover {
+  background-color: #62b3a6;
+}
+
+table {
+  margin-left: 50px;
+}
+
+body {
+  background-color: #a1c2bd;
+}

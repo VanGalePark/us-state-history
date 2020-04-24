@@ -1,0 +1,41 @@
+.navigation {
+    background-color: grey;
+    width: 100%;
+    display: table;
+    margin: auto;
+    height: 10%;
+}
+
+.navTable{
+  margin: auto;
+}
+
+nav ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav li{
+    display: inline-block;
+    margin: 30px;
+    padding: 0px;
+}
+
+h1 {
+    margin: 20px;
+    padding: 0;
+    text-align: center;
+}
+
+a{
+    color:black;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
