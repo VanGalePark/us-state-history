@@ -1,7 +1,7 @@
 button {
   background-color: #a1e6db;
   border: none;
-  padding: 10px 20px;
+  padding: 8px 20px;
   text-align: center;
   font-size: 15px;
   cursor: pointer;
@@ -24,4 +24,9 @@ table {
 
 body {
   background-color: #a1c2bd;
+}
+
+input[type=text] {
+  border-radius: 12px;
+  padding: 7px;
 }

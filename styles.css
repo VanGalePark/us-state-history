@@ -4,10 +4,15 @@
     display: table;
     margin: auto;
     height: 10%;
+    border-style: double;
 }
 
 .navTable{
   margin: auto;
+}
+
+.navLinks{
+  font-size: 20px;
 }
 
 nav ul{

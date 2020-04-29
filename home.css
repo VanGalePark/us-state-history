@@ -1,0 +1,9 @@
+img {
+  display: block;
+  margin: auto;
+  border-style: dashed;
+}
+
+html {
+  background-color: #a8a7a7;
+}
