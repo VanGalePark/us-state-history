@@ -1,0 +1,24 @@
+{
+  "name": "us-state-history",
+  "version": "1.0.0",
+  "description": "",
+  "main": "scripts.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VanGalePark/us-state-history.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/VanGalePark/us-state-history/issues"
+  },
+  "homepage": "https://github.com/VanGalePark/us-state-history#readme",
+  "dependencies": {
+    "mysql": "^2.18.1",
+    "requirejs": "^2.3.6"
+  }
+}

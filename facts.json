@@ -1,0 +1,27 @@
+[
+    {
+        "name": "Missouri",
+        "abbreviation": "MO",
+        "capital": "Jefferson City"        
+    },
+    {
+        "name": "Kansas",
+        "abbreviation": "KS",
+        "capital": "Topeka"
+    },
+    {
+        "name": "Florida",
+        "abbreviation": "FL",
+        "capital": "Tallahassee"
+    },
+    {
+        "name": "Oklahoma",
+        "abbreviation": "OK",
+        "capital": "Oklahoma City"
+    },
+    {
+        "name": "Washington",
+        "abbreviation": "WA",
+        "capital": "Olympia"
+    }
+]
