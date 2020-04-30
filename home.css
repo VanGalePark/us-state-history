@@ -1,8 +1,7 @@
 img {
   display: block;
   margin: auto;
+  border-radius: 10px;
+  border-style: dotted;
 }
 
-html {
-  background-color: #f2fae8;
-}

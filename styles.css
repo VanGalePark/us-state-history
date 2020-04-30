@@ -5,6 +5,7 @@
     margin: auto;
     height: 10%;
     border-style: double;
+    border-radius: 10px;
 }
 
 .navTable{
@@ -43,4 +44,10 @@ a:link {
 
 a:hover {
     text-decoration: underline;
+}
+
+html{
+    background-image: url('./images/background-image.png');
+    background-repeat: no-repeat;
+    background-size: cover;
 }
