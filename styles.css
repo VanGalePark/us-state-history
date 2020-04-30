@@ -1,11 +1,11 @@
 .navigation {
-    background-color: grey;
+    background-color: #fffec7;
     width: 100%;
     display: table;
     margin: auto;
     height: 10%;
-    border-style: double;
-    border-radius: 10px;
+    border-style: outset;
+    border-radius: 20px;
 }
 
 .navTable{
@@ -46,8 +46,11 @@ a:hover {
     text-decoration: underline;
 }
 
+.animaniacs {
+    color: darkblue;
+}
+
 html{
     background-image: url('./images/background-image.png');
-    background-repeat: no-repeat;
     background-size: cover;
 }
