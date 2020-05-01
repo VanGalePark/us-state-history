@@ -3,8 +3,7 @@ function init() {
     let randomButton = document.getElementById("randomButton");
     let searchButton = document.getElementById("searchButton");
     let searchText = document.getElementById("search");
-    let definition = document.getElementById("definition");
-    let vocabWord = document.getElementById("vocabWord");
+    let error = document.getElementById("error")
 
     //index 0 is state name
     //index 1 is state abbreviation
@@ -46,7 +45,7 @@ function init() {
         "Kansas is one of three states that produce helium, the other two<br>" +
         "being Texas and Oklahoma.",
     
-        "Kansas has the biggest <u>community</u> ball of <u>sisal</u> twine."]],
+        "Kansas has the biggest ball of <u>sisal</u> twine built by a <u>community</u>."]],
         
         //oklahoma
         ["Oklahoma", "OK", "Sooner State", 
@@ -93,7 +92,10 @@ function init() {
         "would take them as fertilizer material. Alabama is <u>not</u> the only state this ever happened to.",
     
         "The Wright brothers, Orville and Wilbur, opened the first ever aviation school outside of<br>" +
-        "Montgomery, Alabama."]],
+        "Montgomery, Alabama.",
+    
+        "There really is a place in Alabama called <a href='https://www.youtube.com/watch?v=ye5BuYf8q4o'>Sweet Home<a>. It's not a town, but a historic house<br>" +
+        "in Bessemer, AL, built by William E. Benns in 1906."]],
 
         //alaska
         ["Alaska", "AK", "Last Frontier", 
@@ -110,7 +112,11 @@ function init() {
         "make up 75% of US volcanic eruptions in the past 200 years.",
 
         "The US purchased Alaska from Russia for $7.2 million in 1867. $7.2 million in 1876 is equivalent to about<br>" +
-        "$125,500,000 in 2020."]],
+        "$125,500,000 in 2020.",
+        
+        "The produce in Alaska can grow <u>a lot</u>. Thanks to the summer sun, delivering sunlight for as<br>" +
+        "much as 20 hours a day, your veggies could be as bg as you! Recently there has been a 138 pound cabbage,<br>" +
+        "a 65 pound cantaloupe, and a 35 pound broccoli."]],
 
         //arizona
         ["Arizona", "AZ", "Grand Canyon State", 
@@ -124,31 +130,113 @@ function init() {
         "at the Lowell Observatory.",
         
         "Arizona has the most species of rattlesnakes with 13 different species. The Mohave rattlesnake is the<br>" +
-        "most toxic of all 13, but the Western Diamondback rattlesnake is responsible for more bites, and deaths,<br>" +
+        "most toxic of all 13, but the Western Diamondback rattlesnake is responsible for more bites and deaths<br>" +
         "than any other type of rattlesnake.<br>" +
         "<img width=500 alt='western diamondback rattlesnake' src='https://www.wildrepublic.com/wp-content/uploads/2018/11/WesternDiamondback-3-3992-xl.jpg'",
     
-        "Arizona is the only state aside from Hawaii that doesn't observe Daylight Savings time."]],
+        "Arizona is the only state aside from Hawaii that doesn't observe Daylight Savings time.",
+        
+        "When you think of Arizona you might think of the cacti. It can take a saguaro cactus 10 years<br>" +
+        "to reach <i>one inch</i>. By 70 years they can be 6 and a half feet and begin making their own flowers,<br>" + 
+        "and by 95-100 years they can be 15-16 feet tall and might start to make their first arms! This is why<br>" +
+        "there a law against cutting them down. If you cut one down, even on your own property,<br>" +
+        "you can get a hefty fine or even jail time.",
+    
+        "You can be in Colorado, Arizona, New Mexico, and Utah all at the same time. Arizona's northeast<br>" +
+        "corner borders the three states and is the only place in the US where the corners of four states<br>" +
+        "meet."]],
 
         //arkansas
         ["Arkansas", "AR", "Natural State", 
         ["Diamonds were first discovered in Arkansas, where Crater of Diamonds State Park stands now, by<br>" +
-        "John W. Huddleston in 1906."]],
+        "John W. Huddleston in 1906.",
+        
+        "On July 2nd, 1962 the first ever Walmart opened in Rogers, Arkansas.",
+    
+        "The largest diamonds ever found in the US were in Arkansas, including an 8.52-carat Esperanza gem<br>" +
+        "discovered July of 2015. It has an estimated value of $1,000,000."]],
 
         //colorado
-        ["Colorado", "CO", "Contennial State", []],
-        ["California", "CA", "Golden State", []],
-        ["Connecticut", "CT", "Constitution State", []],
-        ["Delaware", "DE", "First State", []],
-        ["Florida", "FL", "Sunshine State", []],
-        ["Georgia", "GA", "Peach State", []],
-        ["Hawaii", "HI", "Aloha State", []],
+        ["Colorado", "CO", "Centennial State", 
+        ["Colorado is the only state in hisotry to turn down the Olympics. Residents voted against hosting<br>" +
+        "the 1976 Winter Olympics to avoid the cost, pollution, and populaton boom.",
+    
+        "You can be in Colorado, Arizona, New Mexico, and Utah all at the same time. Colorado's southwest<br>" +
+        "corner borders the three states and is the only place in the US where the corners of four states<br>" +
+        "meet.",
+    
+        "Leadville, Colorado is the highest town or city in the US, sitting at 10,512 feet! The founding<br>" +
+        'suggested Leadville since there were so many towns with "silver" in the name.',
+    
+        "The Park Theater in Estes Park was Colorado's first place to see a movie. The Park Theater was built<br>" +
+        "in 1913 and is the oldest theater in the state and one of th oldest in the world.",
+    
+        "Colorado is nicknamed the Centennial State because it became a state in 1876, 100 years after the signing<br>" +
+        "of the Declaration of Independence."]],
+
+        //california
+        ["California", "CA", "Golden State", 
+        ["In San Francisco, burying the dead has been illegal since 1901. Space was limited and real estate was<br>" +
+        "high in demand, even back then, so the city outlawed burials and moved all cemeteries to a neighboring<br>" +
+        "town, Colma, California. The dead in the town outnumber the living 1000 to 1.<br>" +
+        "Don't go there during a zombie apocalypse."]],
+
+        //connecticut
+        ["Connecticut", "CT", "Constitution State", 
+        ["A pickle can only legally be called a pickle if the if it bounces."]],
+
+        //deleware
+        ["Delaware", "DE", "First State", 
+        ["Delaware is the second smallest state and has only 3 counties, less than every other state.",
+        
+        'Delaware is nicknamed "The First State" because it was the first of the 13 colonies. Because they were<br>' +
+        'the first state, they are given the first position in congressional votes and national events such as<br>' +
+        'Presidential Inaugurations.']],
+
+        //florida
+        ["Florida", "FL", "Sunshine State", 
+        ["Florida is the only place in the world where alligators and crocodiles coexist."]],
+
+        //georgia
+        ["Georgia", "GA", "Peach State", 
+        ["In Athens, Georgia there is a tree that owns itself and an 8 foot radius of land named the Jackson Oak.<br>" +
+        "Professor William Jackson deeded both the tree and the land <i>to</i> the tree in the early 19th century.<br>" +
+        "In 1942 the tree fell, but was replaced by a new tree grown from the original tree's acorns. This new tree is<br>" +
+        "called, the son of the tree that owns itself.",
+    
+        "Georgia is known as the Peach State, but it's also the US's top producer for pecans, peanuts, and vidalia onions.<br>" +
+        "The state's onions are thought to be some of the sweetest in the world.",
+    
+        "Funeral directors in Georgia can lose their licenses if they use obscense language in the company of a corpse.",
+        
+        "You can find live shrimp at the top of Stone Mountain, 1682 feet above sea level. Depressions in the stone gather<br>" +
+        "rainwater that gives the shrimp a nice little habitat.",
+    
+        "Cumberland Island, Georgia is inhabited by wild horses."]],
+
+        //hawaii
+        ["Hawaii", "HI", "Aloha State", 
+        ["There are only 12 letters in the Hawaiian alphabet.<br>" +
+        "Vowels: A, E, I, O, U<br>" +
+        "Consonants: H, K, L, M, N, P, W",
+    
+        "From east to west Hawaii is the widest state.",
+    
+        "Hawaii has its own time zone (HST/Hawaii Standard Time) and they don't<br>" +
+        "observe daylight savings time.",
+    
+        "Kilauea Iki is the world's most active and largest volcano."]],
 
         //idaho
         ["Idaho", "ID", "Gem State", 
         ["Idaho is also known as The Potato State because the combination<br>" +
         "of their rich volcanic soil, water from melting snow in nearby mountains,<br>" +
-        "clean air, sunny days, and cool nights produce high quality potatoes."]],
+        "clean air, sunny days, and cool nights produce high quality potatoes.",
+    
+        "Idaho is the only state with a seal designed by a woman.<br> Sarah Etine Edwards won " +
+        "1890 contest with her design and<br> not only did she get the glory of being the one to design<br>" +
+        "a state seal, she also won $100!<br>" +
+        "(That would be $2836.43 in 2020)"]],
 
         //illinois
         ["Illinois", "IL", "Prarie State", []],
@@ -166,15 +254,19 @@ function init() {
 
         //massachusetts
         ["Massachusetts", "MA", "Bay State", 
-        ["On January 15th, 1919 was the Great Molasses Flood, also known as the Boston " + 
-        "Molassacre. A large storage tank filled with 2.3 million gallons of mollasses " + 
-        "burst and rushed through the streets at about 35 mph, killing 21 people and " +
-        "injuring 150. Many residents claimed that the area still smelled of molasses on " +
+        ["On January 15th, 1919 was the Great Molasses Flood, also known as the Boston<br> " + 
+        "Molassacre. A large storage tank filled with 2.3 million gallons of mollasses<br> " + 
+        "burst and rushed through the streets at about 35 mph, killing 21 people and<br> " +
+        "injuring 150. Many residents claimed that the area still smelled of molasses on<br> " +
         "hot summer days.",
     
         "It is against the law in Massachusetts to lounge on shelves in a bakery.<br>" + 
         "Will you be arrested and sent to jail for it? I'd guess not but, be careful<br>" +
-        "anyways."]],
+        "anyways.",
+    
+        "In 1872 there was a devastating fire that went on for 12 hours in Boston. It began 7pm November 9<br>" +
+        "and ended 7am November 10th. It was one of the most destructive fires in American hisotry.<br>" +
+        "It's referred to as the Great Boston Fire of 1872."]],
 
         //michigan
         ["Michigan", "MI", "Great Lake State", []],
@@ -190,7 +282,14 @@ function init() {
         ["Nevada", "NV", "Silver State", []],
         ["New Hampshire", "NH", "Granite State", []],
         ["New Jersey", "NJ", "Garden State", []],
-        ["New Mexico", "NM", "Land of Enchantment", []],
+
+        //new mexico
+        ["New Mexico", "NM", "Land of Enchantment", 
+        ["You can be in Colorado, Arizona, New Mexico, and Utah all at the same time. New Mexico's northwest<br>" +
+        "corner borders the three states and is the only place in the US where the corners of four states<br>" +
+        "meet."]],
+
+        //new york
         ["New York", "NY", "Empire State", []], 
         ["North Carolina", "NC", "Tar Heel State", []],
         ["North Dakota", "ND", "Peace Garden State", []],
@@ -208,7 +307,12 @@ function init() {
         "being Kansas and Oklahoma."]],
 
         //utah
-        ["Utah", "UT", "Beehive State", []],
+        ["Utah", "UT", "Beehive State", 
+        ["You can be in Colorado, Arizona, New Mexico, and Utah all at the same time. Utah's southeast<br>" +
+        "corner borders the three states and is the only place in the US where the corners of four states<br>" +
+        "meet."]],
+
+        //vermont
         ["Vermont", "VT", "Green Mountain State", []],
         ["Virginia", "VA", "Old Dominion", []],
         ["West Virginia", "WV", "Mountain State", []],
@@ -219,6 +323,8 @@ function init() {
 
         //wyoming
         ["Wyoming", "WY", "Equality State", []]];
+
+    let stateChecker = [];
 
     let colors = ["#ffbdc7", "#ffbdd6", "#ffbdf7", "#f0abff", "#c994ff", "#a494ff",
         "#94abff", "#94caff", "#94f1ff", "#b3ffed", "#b5ffd4", "#94ffa0", "#c1ffb5",
@@ -234,7 +340,7 @@ function init() {
                 <table style="margin: auto; background-color: ${colors[colorIndex]}; border-radius: 8px; border-style: dashed;">
                     <tr>
                         <th>
-                            <h2 style="font-size: 60px; line-height: 0px; font-weight: bold;">${factsArray[index][0]}, ${factsArray[index][1]}</h2>
+                            <h2 style="font-size: 60px; line-height: 0px; font-weight: bold;">${factsArray[index][0]} - ${factsArray[index][1]}</h2>
                             <p style="font-size: 25px;"> The ${factsArray[index][2]} </p> 
                             <p style="line-height: 25px; padding: 5px;"> ${factsArray[index][3][factIndex]} </p>       
                         </th>
@@ -254,16 +360,15 @@ function init() {
 
             if(factsArray[i][0].toLowerCase() === searchLower) {
                 let colorIndex = Math.round(Math.random()*(colors.length-1));
-                console.log(colorIndex)
-                
                 fact.innerHTML = `
                 <div>
                     <table style="margin: auto; background-color: ${colors[colorIndex]}; border-radius: 8px; border-style: dashed;">
                         <tr>
                             <th>
                                 <h2 style="font-size: 60px; line-height: 0px;">${factsArray[i][0]}, ${factsArray[i][1]}</h2>
-                                <p style="font-size: 25px;"> The ${factsArray[i][2]} </p> 
-                                <p style="line-height: 25px; padding: 5px;"> ${factsArray[i][3][factIndex]} </p>       
+                                <p style="font-size: 25px; line-height: 15px;"> The ${factsArray[i][2]} </p> 
+                                <p style="line-height: 22px; padding: 5px;"> ${factsArray[i][3][factIndex]} <br></p>
+                                <p style="font-size: 12px;"><br><u>If you press search again, you can get a new fact for the same state!</u></p>       
                             </th>
                         </tr>
                     </table>
@@ -275,7 +380,21 @@ function init() {
                     <p style="font-size: 25px; text-align: center;">I can't find a state if one isn't entered :(</p>
                 </div>    
                 `
-             }
+            }
+
+            stateChecker.push(factsArray[i][0].toLowerCase());
+
+            if(!stateChecker.includes(searchLower)) {
+                error.innerHTML = `
+                <div>
+                    <p>Sorry I'm not sure the state <u>${search}</u> exists!</p>
+                </div>
+                `
+            } else {
+                error.innerHTML = `
+                <div></div>
+                `
+            }
         }
         event.preventDefault()
     })

@@ -1,13 +1,14 @@
 button {
-  background-color: #a1e6db;
+  background-color: #abfff2;
   border: none;
   padding: 8px 20px;
   text-align: center;
   font-size: 15px;
   cursor: pointer;
   border-radius: 12px;
-  margin-top: 20px;
+  margin-top: 5px;
   border-style: outset;
+  font-family: sans-serif;
 }
 
 .randomButton {
@@ -16,13 +17,12 @@ button {
 }
 
 button:hover {
-  background-color: #62b3a6;
+  background-color: #8ad1c6;
 }
 
 table {
   margin-left: 50px;
 }
-
 
 input[type=text] {
   border-radius: 12px;
@@ -37,5 +37,13 @@ input[type=text] {
 .guidance{
   line-height: 0px;
   font-weight: bold;
+  padding-left: 50px;
+}
+
+#error {
+  color: #b02c2c;
+  font-weight: bold;
+  font-size: 15px;
+  font-family: Verdana, Tahoma, sans-serif;
   padding-left: 50px;
 }
