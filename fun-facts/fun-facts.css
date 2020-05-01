@@ -33,3 +33,9 @@ input[type=text] {
   text-align: center;
   font-family: sans-serif;
 }
+
+.guidance{
+  line-height: 0px;
+  font-weight: bold;
+  padding-left: 50px;
+}

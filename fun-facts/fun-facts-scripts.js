@@ -3,7 +3,8 @@ function init() {
     let randomButton = document.getElementById("randomButton");
     let searchButton = document.getElementById("searchButton");
     let searchText = document.getElementById("search");
-    let error = document.getElementById("error");
+    let definition = document.getElementById("definition");
+    let vocabWord = document.getElementById("vocabWord");
 
     //index 0 is state name
     //index 1 is state abbreviation
@@ -25,7 +26,7 @@ function init() {
         "Missouri is one of 12 states with its own official horse.<br>The Missouri Fox " +
         "Trotter is a mid-sized muscular breed from the Ozarks that's popular on ranches.",
     
-        "Missouri has the biggest <u>nylon<u> ball of twine."]],
+        "Missouri has the biggest <u>nylon</u> ball of twine."]],
 
         //kansas
         ["Kansas", "KS", "Sunflower State", 
@@ -45,7 +46,7 @@ function init() {
         "Kansas is one of three states that produce helium, the other two<br>" +
         "being Texas and Oklahoma.",
     
-        "Kansas has the biggest <u>community<u> ball of <u>sisal<u> twine."]],
+        "Kansas has the biggest <u>community</u> ball of <u>sisal</u> twine."]],
         
         //oklahoma
         ["Oklahoma", "OK", "Sooner State", 
@@ -61,15 +62,78 @@ function init() {
         "being Texas and Kansas.",
         
         "Pensacola, OK was the site of an 1862 Civil War battle.<br>" +
-        "The Confederates won."]],
+        "The Confederates won.",
+        
+        "Because of the frequent sightings, there is an annual Big Foot Festival<br> " +
+        "in eastern Oklahoma."]],
 
         //washington
-        ["Washington", "WA", "Evergreen State", []],
-        ["Alabama", "AL", "Yellowhammer State", []],
-        ["Alaska", "AK", "Last Frontier", []],
-        ["Arizona", "AZ", "Grand Canyon State", []],
+        ["Washington", "WA", "Evergreen State", 
+        [`Hells Canyon is the deepest gorge in North America at 8,000 feet.`,
+        
+        "Snoqualmie Falls is 100 feet higher than New York's Niagra Falls.",
+    
+        "Washington is the only state named after a president.",
+    
+        "The first ever Starbucks was opened in Seattle's Pike Place Market in 1971."]],
+
+        //alabama
+        ["Alabama", "AL", "Yellowhammer State", 
+        ["Montgomery, Alabama had the first ever city wide electric trolly system. In 1862<br>" +
+        "the Capital City Railway Company began service to what soon would be known as, <br>" +
+        "`The Lightning Route`. After 50 years, The Lightning Route was replaced by busses.",
+    
+        "Anniston, Alabama has the world's largest office chair, which is made from 10 tons of steel.<br>" +
+        "<img style='border-style:solid;' alt='world's largest office chair' src='https://www.roadsideamerica.com/attract/images/al/ALANNchair_8960.jpg'> ",
+    
+        "The only confirmed person to have ever survived being hit by a meteorite was an Ann Hodges on<br>" +
+        "November 30th, 1954 while she was napping on her couch. This happened in Oak Grove, Alabama.",
+    
+        "In May of 1892 it started to rain eels. They started to pile up in the street and farmers<br>" +
+        "would take them as fertilizer material. Alabama is <u>not</u> the only state this ever happened to.",
+    
+        "The Wright brothers, Orville and Wilbur, opened the first ever aviation school outside of<br>" +
+        "Montgomery, Alabama."]],
+
+        //alaska
+        ["Alaska", "AK", "Last Frontier", 
+        ["Alaska has more coastline than the rest of the US combined, including Alaska's islands.",
+    
+        "In September, the Alaskan wood frog freeze. They don't freeze solid but two thirds of their<br>" +
+        "body water turns to ice until around May the next year.",
+    
+        "In Whittier, Alaska almost all of it's 217 residents live in the same building, Begich Towers,<br>" +
+        "a Cold War-era army barracks built in 1974.<br>" +
+        "<img width=500 alt='Begich Towers' src='https://www.adn.com/resizer/bjgmsYikKf8TC2hukn5-gYunyn0=/1200x0/s3.amazonaws.com/arc-wordpress-client-uploads/adn/wp-content/uploads/2016/08/16220146/160809-Begich-Towers-1-1024x683.jpg'",
+    
+        "Alaska has 130 volcanoes, 50 of those have been active since around 1760. Together these volcanoes<br>" +
+        "make up 75% of US volcanic eruptions in the past 200 years.",
+
+        "The US purchased Alaska from Russia for $7.2 million in 1867. $7.2 million in 1876 is equivalent to about<br>" +
+        "$125,500,000 in 2020."]],
+
+        //arizona
+        ["Arizona", "AZ", "Grand Canyon State", 
+        ["There are 685 deaths recorded that have occured at the Grand Canyon that have been from accidents and<br>" +
+        "health related-issues.",
+    
+        "There aren't any fossils in the Grand Canyon because the rocks are older than the dinosaurs. The only<br>" +
+        "fossils you might find are things like corals, sponges, and trilobites.",
+    
+        "Pluto was discovered in Flagstaff on February 18th, 1930, by Clide Tombaugh with an astrograph telescope<br>" +
+        "at the Lowell Observatory.",
+        
+        "Arizona has the most species of rattlesnakes with 13 different species. The Mohave rattlesnake is the<br>" +
+        "most toxic of all 13, but the Western Diamondback rattlesnake is responsible for more bites, and deaths,<br>" +
+        "than any other type of rattlesnake.<br>" +
+        "<img width=500 alt='western diamondback rattlesnake' src='https://www.wildrepublic.com/wp-content/uploads/2018/11/WesternDiamondback-3-3992-xl.jpg'",
+    
+        "Arizona is the only state aside from Hawaii that doesn't observe Daylight Savings time."]],
+
+        //arkansas
         ["Arkansas", "AR", "Natural State", 
-        []],
+        ["Diamonds were first discovered in Arkansas, where Crater of Diamonds State Park stands now, by<br>" +
+        "John W. Huddleston in 1906."]],
 
         //colorado
         ["Colorado", "CO", "Contennial State", []],
@@ -117,7 +181,7 @@ function init() {
 
         //minnesota
         ["Minnesota", "MN", "North Star State", 
-        ["Minnesota has the largest ball of twine <u>built by one person<u>."]],
+        ["Minnesota has the largest ball of twine <u>built by one person</u>."]],
 
         //mississippi
         ["Mississippi", "MS", "Magnolia State", []],
@@ -151,7 +215,7 @@ function init() {
 
         //wisconsin
         ["Wisconsin", "WI", "Badger State", 
-        ["Wisconsin has the <u>heaviest<u> ball of twine."]],
+        ["Wisconsin has the <u>heaviest</u> ball of twine."]],
 
         //wyoming
         ["Wyoming", "WY", "Equality State", []]];
@@ -208,7 +272,7 @@ function init() {
             } else if(search === ""){
                 fact.innerHTML = `
                 <div>
-                    <p style="font-size: 25px; padding-left: 50px;">I can't find a state if one isn't entered :(</p>
+                    <p style="font-size: 25px; text-align: center;">I can't find a state if one isn't entered :(</p>
                 </div>    
                 `
              }
