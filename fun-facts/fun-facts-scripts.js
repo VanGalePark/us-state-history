@@ -186,7 +186,7 @@ function init() {
 
         //connecticut
         ["Connecticut", "CT", "Constitution State", 
-        ["A pickle can only legally be called a pickle if the if it bounces."]],
+        ["A pickle can only legally be called a pickle if it bounces."]],
 
         //deleware
         ["Delaware", "DE", "First State", 
