@@ -321,7 +321,7 @@ function init() {
         "and ended 7am November 10th. It was one of the most destructive fires in American hisotry.<br>" +
         "It's referred to as the Great Boston Fire of 1872.",
     
-        "It is illegal to kill or frighten a pidgeon in their home."]],
+        "It is illegal to kill or frighten a pigeon in their home."]],
 
         //michigan
         ["Michigan", "MI", "Great Lake State", 
@@ -384,7 +384,14 @@ function init() {
         ["Ohio", "OH", "Buckeye State", []],
         ["Oregon", "OR", "Beaver State", []],
         ["Pennsylvania", "PA", "Keystone State", []],
-        ["Rhode Island", "RI", "Ocean State", []],
+
+        //rhode island
+        ["Rhode Island", "RI", "Ocean State", 
+        ["Rhode island is the smallest state in the us with 1212 square miles.",
+    
+        "This state was the last of the original 13 colonies to become a state."]],
+
+
         ["South Carolina", "SC", "Palmetto State", []],
         ["South Dakota", "SD", "Mouth Rushmore State", []],
         ["Tennessee", "TN", "Volunteer State", []],
