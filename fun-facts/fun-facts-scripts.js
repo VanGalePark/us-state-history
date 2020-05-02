@@ -239,9 +239,37 @@ function init() {
         "(That would be $2836.43 in 2020)"]],
 
         //illinois
-        ["Illinois", "IL", "Prarie State", []],
-        ["Indiana", "IN", "Crossroads of America", []],
-        ["Iowa", "IA", "Hawkeye State", []],
+        ["Illinois", "IL", "Prarie State", 
+        ["in 1865 Illinois was the first state to abolish slavery.",
+    
+        "In 1871 was the Great Chicago Fire. A fire that started in a barn located on the property of Patrick and Catherine O'Leary<br>" +
+        "burned for 2 days, October 8th to the 10th. The fire killed 300 people, destroyed 3.3 square miles, and left over 100,000 people<br>" +
+        "homeless.",
+    
+        "In Vandalia, Illinois there is a fire breathing dragon known as the Kaskaskia Dragon.<br>" +
+        "<img alt='Kaskaskia Dragon in Illinois' src='https://www.roadsideamerica.com/attract/images/il/ILVANdragon_morgan.jpg'>",
+    
+        "Twinkies were invented on April 6th, 1930 in River Forest, Illinois.",
+    
+        "The world's tallest man, Robert Wadlow, was born in Alton, Illinois on<br>February 22nd,1918. He was 8 foot 11 inches, weighed 491 pounds,<br>" +
+        "and had a size 37 shoe. He died at the age of 22.<br>" +
+        "<img width=500px alt='Robert Wadlow' src='https://www.guinnessworldrecords.com/Images/Robert-Wadlow-Colourised-By-PMH_tcm25-511586.jpg'>"]],
+
+        //indiana
+        ["Indiana", "IN", "Crossroads of America", 
+        ["Orville Redenbacher, Indiana produces more than 20% of the country's popcorn supply. Almost half of the state's cropland is used<br>" +
+        "for corn. In 2014, more than 91,000 acres of corn were planted for popcorn."]],
+
+        //iowa
+        ["Iowa", "IA", "Hawkeye State", 
+        ["It is illegal for a man with a mustache to kiss a woman in public.",
+    
+        "You cannot eat the largest strawberry in the world because it's made of fiberglass. It sits high in Strawberry Point, Iowa.<br>" + 
+        "<img width=500 alt='the worlds largest strawberry' src='https://express-images.franklymedia.com/4294/sites/76/2019/09/16120126/IMG-08882.jpg'>",
+    
+        "There are more hogs in iowa than people. They outnumber people 4 to 1, with a population of 3 million."]],
+
+        //kentucky
         ["Kentucky", "KY", "Bluegrass State", []],
         ["Louisiana", "LA", "Pelican State", []],
 
@@ -365,7 +393,7 @@ function init() {
                     <table style="margin: auto; background-color: ${colors[colorIndex]}; border-radius: 8px; border-style: dashed;">
                         <tr>
                             <th>
-                                <h2 style="font-size: 60px; line-height: 0px;">${factsArray[i][0]}, ${factsArray[i][1]}</h2>
+                                <h2 style="font-size: 60px; line-height: 0px;">${factsArray[i][0]} - ${factsArray[i][1]}</h2>
                                 <p style="font-size: 25px; line-height: 15px;"> The ${factsArray[i][2]} </p> 
                                 <p style="line-height: 22px; padding: 5px;"> ${factsArray[i][3][factIndex]} <br></p>
                                 <p style="font-size: 12px;"><br><u>If you press search again, you can get a new fact for the same state!</u></p>       
