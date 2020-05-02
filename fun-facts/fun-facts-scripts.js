@@ -25,7 +25,10 @@ function init() {
         "Missouri is one of 12 states with its own official horse.<br>The Missouri Fox " +
         "Trotter is a mid-sized muscular breed from the Ozarks that's popular on ranches.",
     
-        "Missouri has the biggest <u>nylon</u> ball of twine."]],
+        "Missouri has the biggest <u>nylon</u> ball of twine.",
+    
+        "The state is home to the deadliest tornado in US history, the Tri-State tornado of<br>" +
+        "Marth 8th, 1925. It killed 695 people, injured 2027, and destroyed about 15,000 homes."]],
 
         //kansas
         ["Kansas", "KS", "Sunflower State", 
@@ -189,8 +192,8 @@ function init() {
         ["Delaware", "DE", "First State", 
         ["Delaware is the second smallest state and has only 3 counties, less than every other state.",
         
-        'Delaware is nicknamed "The First State" because it was the first of the 13 colonies. Because they were<br>' +
-        'the first state, they are given the first position in congressional votes and national events such as<br>' +
+        'Delaware is nicknamed "The First State" because it was the first of the 13 colonies. Because they are<br>' +
+        'the first state, they\'re given the first position in congressional votes and national events such as<br>' +
         'Presidential Inaugurations.']],
 
         //florida
@@ -267,18 +270,40 @@ function init() {
         "You cannot eat the largest strawberry in the world because it's made of fiberglass. It sits high in Strawberry Point, Iowa.<br>" + 
         "<img width=500 alt='the worlds largest strawberry' src='https://express-images.franklymedia.com/4294/sites/76/2019/09/16120126/IMG-08882.jpg'>",
     
-        "There are more hogs in iowa than people. They outnumber people 4 to 1, with a population of 3 million."]],
+        "There are more hogs in iowa than people. They outnumber people 4 to 1, with a population of 3 million.",
+    
+        "Iowa is the only state that has a name that begins with two vowels."]],
 
         //kentucky
-        ["Kentucky", "KY", "Bluegrass State", []],
-        ["Louisiana", "LA", "Pelican State", []],
+        ["Kentucky", "KY", "Bluegrass State", 
+        ["Kentucky was originally a county of Virigina, but as the citizens of the western part of the state started to get frustrated with their<br>" +
+        "eastern neighbors, they petitioned for statehood and became the US's 15th state in 1792."]],
+
+        //louisiana
+        ["Louisiana", "LA", "Pelican State", 
+        ["Louisiana is the only state to have parishes instead of counties.",
+        
+        "Biting someone with your natural teeth is considered a simple assault, but<br> bititng someone with your false teeth is considered aggrivated assault."]],
 
         //maine
         ["Maine", "ME", "Pine Tree State", 
-        ["In Rumford, Maine it is against the law to bite your landlord."]],
+        ["In Rumford, Maine it is against the law to bite your landlord.",
+    
+        "Maine has its own desert. 40 acres of desert called Desert of Maine, an expanse of silt and sand that came about due to over-farming but has since<br>" +
+        "become a popular tourist attraction."]],
 
         //maryland
-        ["Maryland", "MD", "Old Line State", []],
+        ["Maryland", "MD", "Old Line State", 
+        ["Maryland is the first state to designate a state exercise. On October 1, 2008 the state exercise of Maryland was declared to be <u>walking</u>.",
+        
+        "Convicted murderer, Harold Benjamin Dean, became the first and old person to escape from Maryland supermax penitentiary in 2002.",
+    
+        "The state drink is milk.",
+    
+        "Jousting is the state sport and Lacrosse is the state <i>team</i> sport.",
+    
+        "Maryland has an official state crustacean, the Maryland Blue Crab.<br>" +
+        "<img alt='Chesapeake blue crab' src='https://www.southernmarylandchronicle.com/wp-content/uploads/2018/01/blue-crab.jpg'>"]],
 
         //massachusetts
         ["Massachusetts", "MA", "Bay State", 
@@ -294,22 +319,57 @@ function init() {
     
         "In 1872 there was a devastating fire that went on for 12 hours in Boston. It began 7pm November 9<br>" +
         "and ended 7am November 10th. It was one of the most destructive fires in American hisotry.<br>" +
-        "It's referred to as the Great Boston Fire of 1872."]],
+        "It's referred to as the Great Boston Fire of 1872.",
+    
+        "It is illegal to kill or frighten a pidgeon in their home."]],
 
         //michigan
-        ["Michigan", "MI", "Great Lake State", []],
+        ["Michigan", "MI", "Great Lake State", 
+        ["Michigan was the first state to abolish the death penalty for all crimes except treason.",
+    
+        "You can get 10 cents back for every can you recycle, which is the highest payback rate in the country.<br>" +
+        "While that's awesome, they're losing over $10 million a year due to people from other states fraudulently<br>" +
+        "cash in.",
+    
+        "Built in 1838, the Saugatuck Chain is the last hand-cranked chain ferry in the US.",
+    
+        "The largest working windvane in the US is in Montague, Michigan. Built in 1984 by Whitehall Metal Studios of Montague<br>" +
+        "the windvane is 48 feet tall with an arrow 26 feet long. On top of the arrow is the Ella Ellenwood.<br>" +
+        "<img width=500 alt='worlds largest weather vane' src='https://live.staticflickr.com/6044/6327752356_76d934fe0a_b.jpg'>"]],
 
         //minnesota
         ["Minnesota", "MN", "North Star State", 
-        ["Minnesota has the largest ball of twine <u>built by one person</u>."]],
+        ["Minnesota has the largest ball of twine <u>built by one person</u>.",
+    
+        "The St. Lawrence River flows in three directions. North to the Hudson Bay in Canada, South to the Gulf of Mexico, and<br>" +
+        "East towards the Atlantic Ocean."]],
 
         //mississippi
-        ["Mississippi", "MS", "Magnolia State", []],
-        ["Montana", "MT", "Treasure State", []],
-        ["Nebraska", "NE", "Cornhusker State", []],
+        ["Mississippi", "MS", "Magnolia State", 
+        ["Mississippi has more churches per person than any other state. The state also has the most people attending church<br>" + 
+        "than any other state with 63% of residents saying they attend weekly or almost every week."]],
+
+        //montana
+        ["Montana", "MT", "Treasure State", 
+        ["Montana is the largest landlocked state in the US."]],
+
+        //nebraska
+        ["Nebraska", "NE", "Cornhusker State", 
+        ["Nebraska is home to the world's largest hand-planted forest in Halsey National Forest near<Br>" +
+        "Thedford, that covers over 90,000 acres.",
+
+        'In Blue Hill, Nebraska, no woman wearing a "hat that would scare a timid person" can be seen eating onions in public, it\'s<br>' +
+        'against the law.']],
+
+        //nevada
         ["Nevada", "NV", "Silver State", []],
+
+        //new hampshire
         ["New Hampshire", "NH", "Granite State", []],
-        ["New Jersey", "NJ", "Garden State", []],
+
+        //new jersey
+        ["New Jersey", "NJ", "Garden State", 
+        ["New Jersey was the first state to abolish the death penalty for all crimes."]],
 
         //new mexico
         ["New Mexico", "NM", "Land of Enchantment", 
@@ -342,7 +402,11 @@ function init() {
 
         //vermont
         ["Vermont", "VT", "Green Mountain State", []],
+
+        //virginia
         ["Virginia", "VA", "Old Dominion", []],
+
+        //west virginia
         ["West Virginia", "WV", "Mountain State", []],
 
         //wisconsin
