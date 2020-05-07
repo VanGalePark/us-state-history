@@ -1,0 +1,20 @@
+.stateInfo {
+    font-family: "Palatino Linotype", "Book Antiqua", serif;
+    border-style: dashed;
+    border-radius: 12px;
+    border-color: black;
+    margin: auto;
+}
+
+.stateName {
+    text-align: center;
+    font-size: 50px;
+    padding: 5px;
+}
+
+h2{
+    font-size: 35px;
+    text-align: left;
+    text-decoration: underline;
+}
+
