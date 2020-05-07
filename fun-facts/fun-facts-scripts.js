@@ -447,6 +447,10 @@ function init() {
                 </table>
             </div>
             `
+
+        error.innerHTML = `
+            <div></div>
+            `
     })
 
     searchButton.addEventListener("click", function() {

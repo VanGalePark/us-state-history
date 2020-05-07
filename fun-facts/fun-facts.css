@@ -41,9 +41,9 @@ input[type=text] {
 }
 
 #error {
-  color: #b02c2c;
+  color: #911616;
   font-weight: bold;
-  font-size: 15px;
+  font-size: 17px;
   font-family: Verdana, Tahoma, sans-serif;
   padding-left: 50px;
 }
