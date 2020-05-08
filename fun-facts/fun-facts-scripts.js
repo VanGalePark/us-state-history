@@ -439,7 +439,7 @@ function init() {
                 <table style="margin: auto; background-color: ${colors[colorIndex]}; border-radius: 8px; border-style: dashed;">
                     <tr>
                         <th>
-                            <h2 style="font-size: 60px; line-height: 0px; font-weight: bold;">${factsArray[index][0]} - ${factsArray[index][1]}</h2>
+                            <h2 style="font-size: 60px; line-height: 0px; font-weight: bold;"><a href='../states/${factsArray[index][0]}.html'>${factsArray[index][0]}</a> - ${factsArray[index][1]}</h2>
                             <p style="font-size: 25px;"> The ${factsArray[index][2]} </p> 
                             <p style="line-height: 25px; padding: 5px;"> ${factsArray[index][3][factIndex]} </p>       
                         </th>
@@ -468,7 +468,7 @@ function init() {
                     <table style="margin: auto; background-color: ${colors[colorIndex]}; border-radius: 8px; border-style: dashed;">
                         <tr>
                             <th>
-                                <h2 style="font-size: 60px; line-height: 0px;">${factsArray[i][0]} - ${factsArray[i][1]}</h2>
+                                <h2 style="font-size: 60px; line-height: 0px;"><a href='../states/${factsArray[i][0]}.html'>${factsArray[i][0]}</a> - ${factsArray[i][1]}</h2>
                                 <p style="font-size: 25px; line-height: 15px;"> The ${factsArray[i][2]} </p> 
                                 <p style="line-height: 22px; padding: 5px;"> ${factsArray[i][3][factIndex]} <br></p>
                                 <p style="font-size: 12px;"><br><u>If you press search again, you can get a new fact for the same state!</u></p>       
