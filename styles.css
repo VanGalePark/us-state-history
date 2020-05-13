@@ -26,12 +26,18 @@ nav li{
     display: inline-block;
     margin: 30px;
     padding: 0px;
+    font-family: "Courier New", Courier, monospace;
+    font-size: 25px;
+    width: 150px;
+    font-weight: 200;
 }
 
 h1 {
     margin: 20px;
     padding: 0;
     text-align: center;
+    font-family: "Courier New", Courier, monospace;
+    font-weight: 50;
 }
 
 a{
@@ -44,10 +50,6 @@ a:link {
 
 a:hover {
     text-decoration: underline;
-}
-
-.animaniacs {
-    color: darkblue;
 }
 
 html{
