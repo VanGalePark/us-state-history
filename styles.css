@@ -30,6 +30,7 @@ nav li{
     font-size: 25px;
     width: 150px;
     font-weight: 200;
+    border-style: none;
 }
 
 h1 {

@@ -1,0 +1,38 @@
+li {
+    list-style: none;
+    font-size: 25px;
+    display: inline;
+    padding: 5px;
+}
+
+.spaceman {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+}
+
+.spacemanText {
+    font-size: 15px;
+}
+
+.spaceman .spacemanText {
+    visibility: hidden;
+    background-color: black;
+    color: white;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -60px;
+
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+.spaceman:hover .spacemanText{
+    visibility: visible;
+    opacity: 1;
+}

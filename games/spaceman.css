@@ -1,0 +1,21 @@
+.letterButtons {
+    margin: auto;
+    padding-top: 20px;
+}
+
+button {
+    background-color: #e0a7fc;
+    padding: 10px 22px;
+    text-align: center;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 9px;
+}
+
+button:hover {
+    background-color: #9768e3;
+}
+
+button:disabled {
+    background-color: #9e86a6;
+}
