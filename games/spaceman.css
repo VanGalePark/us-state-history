@@ -1,4 +1,4 @@
-.letterButtons {
+#letterButtons {
     margin: auto;
     padding-top: 20px;
 }
@@ -19,3 +19,13 @@ button:hover {
 button:disabled {
     background-color: #9e86a6;
 }
+
+#newGame {
+    text-align: center;
+    padding-top: 40px;
+}
+
+.newGame {
+    font-size: 50px;
+}
+

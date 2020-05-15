@@ -11,11 +11,11 @@ li {
     border-bottom: 1px dotted black;
 }
 
-.spacemanText {
+.hoverText {
     font-size: 15px;
 }
 
-.spaceman .spacemanText {
+.spaceman .hoverText {
     visibility: hidden;
     background-color: black;
     color: white;
@@ -32,7 +32,7 @@ li {
     transition: opacity 1s;
 }
 
-.spaceman:hover .spacemanText{
+.spaceman:hover .hoverText{
     visibility: visible;
     opacity: 1;
 }
