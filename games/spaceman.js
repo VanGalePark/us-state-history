@@ -60,6 +60,7 @@ function makeButtons() {
 function handleGuess(chosenLetter) {
     guessed.indexOf(chosenLetter) === -1 ? guessed.push(chosenLetter) : null;
     document.getElementById(chosenLetter).setAttribute('disabled', true);
+    
     alert(answer);
 
     if (answer.indexOf(chosenLetter) >= 0) {
