@@ -1,80 +1,81 @@
-function init() {
-    let spaceman = document.getElementById("spacemanHead");
-    let newGame = document.getElementById("newGame");
-    let img = document.getElementById("image");
 
-    let spaceWords = [["Jefferson City", "Capital of Missouri", 
-    ["j", "e", "f", "f", "e", "r", "s", "o", "n", "c", "i", "t", "y",]],
+let newGame = document.getElementById('newGame')
+let spaceman = document.getElementById('spacemanHead')
 
-    "Missouri", "The Show Me State", 
-    ['m', 'i', 's', 's', 'o', 'u', 'r', 'i',]]
+//index 0 is the word
+//index 1 is the hint
+//index 2 is the individual letters
+let spacewords = [
+    ['Jefferson City', "The captial of Missouri"],
 
-    let word = Math.round(Math.random()*(spaceWords.length - 1));
+    ['Missouri', 'The Show Me State'],
 
-    let image = [1, 2, 3, 4, 5, 6]
+    ['Kansas', 'Tornado Alley']
+]
 
-    let alphabet = ['a','b','c','d','e','f','g','h','i','j','k','l','m',
-    'n','o','p','q','r','s','t','u','v','w','x','y','z']
+let answer = '';
+let word = '';
+let guessed = [];
 
-    let wrongLetters = []
-    let rightLetters = []
-
-    let wordLength = [];
-
-    for(let i = 0; i < alphabet.length;i++) {
-        let letter = document.getElementById(`${alphabet[i]}`)
-
-        letter.addEventListener("click", function() {
-            letter.disabled = true;
-
-            for(let y = 0; y < spacewords[word][2].length; y++) {
-                if(letter === y) {
-                    rightLetters.push(letter);
-                } else if(letter !== y){
-                    wrongLetters.push(letter);
-
-                    for(let w = 0; w < image.length; w++) {
-                        img.innerHTML = `<img id='image' style='width: 50%' src="../images/abducted${[w]}.png">`
-                    }
-                }
-            }
-            
-        })
-
-        newGame.addEventListener("click", function() {
-            letter.disabled = false;
-
-            for(let i = 0; i < spacewords[word][2].length; i++) {
-                wordLength.push(_);
-            }
-
-            spaceman.innerHTML = `
-            <div>
-                <table>
-                    <tr>
-                        <th>
-                            <img id='image' style="width:50%" src="../images/abducted0.png" alt="first stage">
-                        </th>
-                        <th>
-                            <p>${wrongLetters.toString()}</p>
-                        </th>
-                    </tr>
-                    <tr>
-                        <th>
-                            <p>${wordLength.toString()}</p>
-                        </th>
-                    </tr>
-                </table>
-            </div>
-            `
-
-            wrongLetters = [];
-            rightLetters = [];
-        
-        })
-    }
-
-    
+function randomWord() {
+    index = Math.round(Math.random() * (spacewords.length - 1));
+    answer = spacewords[index][0];
 }
 
-window.onload = init;
+function makeButtons() {
+    let buttonsHTML = 'ABCDEFGHIJKLM'.split('').map(letter =>
+        `
+        <th>
+            <button id='${letter}' onClick='handleGuess('${letter}')'>
+                ${letter}
+            </button>
+        </th>
+        `).join('');
+
+    document.getElementById('buttonsOne').innerHTML = buttonsHTML;
+
+    let buttonsTwoHTML = 'NOPQRSTU'.split('').map(letter =>
+        `
+        <th>
+            <button id='${letter}' onClick='handleGuess('${letter}')'>
+                ${letter}
+            </button>
+        </th>
+        `).join('');
+
+    document.getElementById("buttonsTwo").innerHTML = buttonsTwoHTML;
+
+    let buttonsThreeHTML = 'VWXYZ'.split('').map(letter =>
+        `
+        <th>
+            <button id='${letter}' onClick='handleGuess('${letter}')'>
+                ${letter}
+            </button>
+        </th>
+        `).join('');
+
+    document.getElementById("buttonsThree").innerHTML = buttonsThreeHTML;
+}
+
+function handleGuess(chosenLetter) {
+    guessed.indexOf(chosenLetter) === -1 ? guessed.push(chosenLetter) : null;
+    document.getElementById(chosenLetter).setAttribute('disabled', true);
+    alert(answer);
+
+    if (answer.indexOf(chosenLetter) >= 0) {
+        guessedWord();
+    }
+}
+
+function guessedWord() {
+
+    word = answer.split('').map(letter => (guessed.indexOf(letter) >= 0 ? letter : "_")).join(' ');
+
+    document.getElementById('spaceword').innerHTML = word;
+}
+
+
+
+randomWord();
+makeButtons();
+guessedWord();

@@ -20,12 +20,12 @@ button:disabled {
     background-color: #9e86a6;
 }
 
-#newGame {
-    text-align: center;
-    padding-top: 40px;
-}
-
-.newGame {
-    font-size: 50px;
+img {
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    border: dotted;
+    border-radius: 12px;
 }
 
