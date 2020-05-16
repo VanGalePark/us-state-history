@@ -29,3 +29,9 @@ img {
     border-radius: 12px;
 }
 
+#winOrLose {
+    font-size: 30px;
+    border-radius: 12px;
+    background-color: #f5f3b5;
+}
+

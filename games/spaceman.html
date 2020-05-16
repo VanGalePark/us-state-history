@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <link rel="stylesheet" type="text/css" href="../styles.css"/>
-        <link rel="stylesheet" type="text/css" href="./spaceman.css"/>
+        <link rel="stylesheet" type="text/css" href="spaceman.css"/>
         <title>Spaceman - Education State-ion</title>
     </head>
 
@@ -60,12 +60,15 @@
     
     
         <img id="spacemanImg" src="../images/abducted0.png"/>
+
+        <p style="text-align: center; font-size: 20;">You have gotten <span id='wrong'>0</span> of 6 guesses wrong.</p>
     
+        <p style="text-align: center; font-size: 15px;" id="hint"></p>
+
         <p style="text-align: center; font-size: 30px;" id="spaceword"></p>
     
-    
         <div style="text-align: center;">
-            <table style="margin: auto;">
+            <table style="margin: auto;" id="letters">
                 <tr>
                     <div id="buttonsOne"></div>
                 </tr>
@@ -75,10 +78,13 @@
                 <tr>
                     <div id="buttonsThree"></div>
                 </tr>
+                <tr>
+                  <button style='padding-right: 50px; padding-left: 50px;' onClick='handleGuess(" ");disabled=true'>Space Bar</button>
+                </tr>
             </table>
         </div>
     </div>
 
     </body>
-    <script src="./spaceman.js"></script>
+    <script src="spaceman.js"></script>
 </html>
