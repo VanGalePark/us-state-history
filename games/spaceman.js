@@ -26,7 +26,7 @@ let answer = '';
 let word = null;
 let guessed = [];
 let mistakes = 0;
-let maxWrong = 6;
+let maxWrong = 7;
 
 function randomWord() {
     index = Math.floor(Math.random() * spacewords.length)
@@ -79,10 +79,9 @@ function makeButtons() {
 
 function handleGuess(chosenLetter) {
     guessed.indexOf(chosenLetter) === -1 ? guessed.push(chosenLetter) : null;
-    //document.getElementById(chosenLetter).setAttribute('disabled', true);
 
     if (mistakes === maxWrong) {
-        mistakes = 6;
+        mistakes = 7;
         
     }else if (answer.indexOf(chosenLetter) >= 0) {
         guessedWord();
@@ -103,6 +102,7 @@ function updateSpacePicture() {
 function checkGameWin() {
     if (word === answer) {
         document.getElementById('letters').innerHTML = `<p style='font-size: 30px;'>You win!!</p>`
+        document.getElementById('spacemanImg').src = '../images/YouWin.png'
     }
 }
 
@@ -124,8 +124,7 @@ function updateMistakes() {
 }
 
 function showHint() {
-    index = Math.floor(Math.random() * spacewords.length)
-    document.getElementById('hint') = `${spacewords[index][1]}`
+    document.getElementById('hint').innerHTML = `${spacewords[index][1]}`
 }
 
 function reset() {
@@ -133,6 +132,7 @@ function reset() {
     guessed = [];
     document.getElementById('spacemanImg').src = '../images/abducted0.png'
     document.getElementById('letters').innerHTML = ''
+    document.getElementById('hint').innerHTML = ''
 
     randomWord();
     guessedWord();
