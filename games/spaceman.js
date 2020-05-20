@@ -6,19 +6,37 @@ let spaceman = document.getElementById('spacemanHead')
 //index 1 is the hint
 //index 2 is the individual letters
 let spacewords = [
-    ['ALABAMA', "Sweet Home ________"],
+    ['ALABAMA', "Sweet Home ________."],
 
-    ['MISSOURI', 'The Show Me State'],
+    ['MISSOURI', 'The Show Me State.'],
 
-    ['KANSAS', 'Tornado Alley'],
+    ['KANSAS', 'Tornado Alley.'],
 
-    ['WASHINGTON', 'The Evergreen State'],
+    ['WASHINGTON', 'The Evergreen State.'],
 
-    ['JEFFERSON CITY', 'The Capital of Missouri'],
+    ['JEFFERSON CITY', 'The Capital of Missouri.'],
 
-    ['NORTH CAROLINA', 'The Tar Heel State'],
+    ['NORTH CAROLINA', 'The Tar Heel State.'],
 
-    ['OREGON', 'The Beaver State']
+    ['OREGON', 'The Beaver State.'],
+
+    ['IOWA', 'The capital is Des Moines.'],
+
+    ['TOPEKA', 'Capital of Kansas'],
+
+    ['CALIFORNIA', 'Hollywood is here.'],
+
+    ['TENNESSEE', 'You\'re the only ten I see.'],
+
+    ['MAINE', 'The capital is Augusta.']
+
+    ['NEW YORK', 'The big apple.'],
+
+    ['CONNECTICUT', 'The capital is Hartford.'],
+
+    ['ALASKA', 'It\s very cold here.'],
+
+    ['LOUISIANA', 'New Orleans is here.']
 ]
 
 let index = 0
@@ -101,7 +119,6 @@ function updateSpacePicture() {
 
 function checkGameWin() {
     if (word === answer) {
-        document.getElementById('letters').innerHTML = `<p style='font-size: 30px;'>You win!!</p>`
         document.getElementById('spacemanImg').src = '../images/YouWin.png'
     }
 }
@@ -109,7 +126,6 @@ function checkGameWin() {
 function checkGameLose() {
     if (mistakes === maxWrong) {
         document.getElementById('spaceword').innerHTML = `<p>The word was: ${answer}</p>`
-        document.getElementById('letters').innerHTML = `<p style='font-size: 30px;>  You lost :(</p>`
     }
 }
 

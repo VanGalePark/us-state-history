@@ -3,13 +3,17 @@
     width: 100%;
     display: table;
     margin: auto;
-    height: 10%;
+    height: 3%;
     border-style: outset;
     border-radius: 20px;
+    border-spacing: 5px;
+    padding: 0px;
 }
 
 .navTable{
   margin: auto;
+  border-collapse: collapse;
+  padding: 0px;
 }
 
 .navLinks{
@@ -30,6 +34,11 @@ nav li{
     width: 130px;
     font-weight: 200;
     border-style: none;
+}
+
+th {
+    padding: 0; 
+    margin: 0;
 }
 
 h1 {

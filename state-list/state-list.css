@@ -1,6 +1,5 @@
-li {
+.statesLi {
     list-style: none;
-    font-family: sans-serif;
     font-size: 30px;
     text-align: left;
     line-height: 50px;
