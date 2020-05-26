@@ -36,7 +36,27 @@ let spacewords = [
 
     ['ALASKA', 'It\s very cold here.'],
 
-    ['LOUISIANA', 'New Orleans is here.']
+    ['LOUISIANA', 'New Orleans is here.'],
+
+    ['ARIZONA', 'The Grand Canyon is here.'],
+
+    ['ARKANSAS', 'Little Rock is the capital.'],
+
+    ['COLORADO', 'Denver is the capital.'],
+
+    ['DELAWARE', 'The first state.'],
+
+    ['FLORIDA', 'The Sunshine State'],
+
+    ['GEORGIA', 'The Peach State'],
+
+    ['HAWAII', 'The Aloha State'], 
+
+    ['IDAHO', 'The Potato State'],
+
+    ['ILLINOIS', 'The capital is Springfield'],
+
+    ['INDIANA', 'The capital is Indianapolis']
 ]
 
 let index = 0
@@ -49,9 +69,6 @@ let maxWrong = 7;
 function randomWord() {
     index = Math.floor(Math.random() * spacewords.length)
     answer = spacewords[index][0];
-
-    console.log(answer)
-    console.log(spacewords.length)
 }
 
 function makeButtons() {
@@ -97,10 +114,13 @@ function makeButtons() {
 
 function handleGuess(chosenLetter) {
     guessed.indexOf(chosenLetter) === -1 ? guessed.push(chosenLetter) : null;
-
-    if (mistakes === maxWrong) {
+    
+    if(mistakes === maxWrong){
         mistakes = 7;
-        
+
+    }else if(word === answer) {
+        mistakes = mistakes;
+
     }else if (answer.indexOf(chosenLetter) >= 0) {
         guessedWord();
         checkGameWin();

@@ -2,10 +2,10 @@
     list-style: none;
     font-size: 25px;
     display: inline;
-    padding: 5px;
+    padding: 30px;
 }
 
-.spaceman {
+.gamename {
     position: relative;
     display: inline-block;
     border-bottom: 1px dotted black;
@@ -15,7 +15,7 @@
     font-size: 15px;
 }
 
-.spaceman .hoverText {
+.gamename .hoverText {
     visibility: hidden;
     background-color: black;
     color: white;
@@ -32,7 +32,7 @@
     transition: opacity 1s;
 }
 
-.spaceman:hover .hoverText{
+.gamename:hover .hoverText{
     visibility: visible;
     opacity: 1;
 }

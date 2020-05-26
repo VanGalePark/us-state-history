@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="../styles.css"/>
+        <link rel="stylesheet" type="text/css" href="./state-match.css">
+        
+        <title>State Match - Education State-ion</title>
+    </head>
+
+    <body>
+        <div class="navigation">
+            <table class="navTable">
+                <tr>
+                    <th>
+       
+                        <nav class="navLinks">
+                            <ul>
+                                <li><a href="../index.html">Home</a></li>
+                                <li><a href="./games.html">Games</a></li>
+                            </ul>
+                        </nav>
+       
+                    </th>
+       
+                    <th>
+                        <h1>Education State-ion</h1>
+                    </th>
+       
+                    <th>
+       
+                        <nav class="navLinks">
+                            <ul>
+                                <li><a href="../fun-facts/fun-facts.html">Fun facts</a></li>
+                                <li><a href="../state-list/state-list.html">States</a></li>
+                            </ul>
+                        </nav>
+       
+                    </th>
+       
+                </tr>
+            </table>
+          </div>
+
+        <p style="text-align: right; padding-right: 20%; font-size: 20px;">You have <span id="points">0</span> points!</p>
+
+        <table class="gameTable">
+            <tr>
+                <th id="image">
+                    <img src="../images/us-map-nonames.png" alt="temp image" width="500px"> 
+                </th>
+                <th>
+                    <form>
+                        <input spellcheck="false" type="text" id="answer" name="userAnswer">
+                        <button id="submitButton">Submit</button> 
+                    </form>
+                </th>
+            </tr>
+        </table>
+
+        <p id="result"></p>
+
+        <div class="newstatebutton">
+            <button id='newstatebutton'>New State</button>
+        </div>
+        
+    </body>
+    <script src="./state-match.js"></script>
+
+</html>
