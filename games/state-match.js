@@ -3,6 +3,7 @@ function init() {
 
     let submit = document.getElementById('submitButton')
     let newState = document.getElementById('newstatebutton')
+    newState.disabled=true;
 
     let answer = document.getElementById('answer');
     let results = document.getElementById('result')
@@ -54,9 +55,9 @@ function init() {
         'utah',
         'vermont',
         'washington',
-        'west Virginia',
+        'west virginia',
         'wisconsin',
-        'wyoming.'
+        'wyoming'
     ]
 
     let points = 0;
@@ -64,7 +65,7 @@ function init() {
     let randomState = Math.round(Math.random()*49);
 
     image.innerHTML = `<th>
-    <img src='../images/${states[randomState]}.jpeg' alt='${states[randomState]}'>
+    <img width="400px" src='../images/${states[randomState]}.png' alt='${states[randomState]}'>
     </th>`
 
     submit.addEventListener('click', function() {
@@ -83,6 +84,7 @@ function init() {
         event.preventDefault();
 
         submit.disabled = true;
+        newState.disabled = false;
         
     })
 
@@ -90,12 +92,13 @@ function init() {
         randomState = Math.round(Math.random()*49);
 
         image.innerHTML = `<th>
-        <img src='../images/${states[randomState]}.jpeg' alt='${states[randomState]}'>
+        <img width="400px" src='../images/${states[randomState]}.png' alt='${states[randomState]}'>
         </th>`
 
         answer.value = ''
         results.innerHTML = ``
         submit.disabled = false;
+        newState.disabled = true;
     })
 
 
