@@ -40,11 +40,12 @@
        
                 </tr>
             </table>
-          </div>
+        </div>
 
-        <p style="text-align: right; padding-right: 20%; font-size: 20px;">You have <span id="points">0</span> points!</p>
+        <p style="text-align: right; padding-right: 30%; font-size: 20px;">You have <span id="points">0</span> points!</p>
 
-        <table class="gameTable">
+        <table id="gameTable">
+            <tr><h1 id="instructions">Enter the <u>name of the state!</u></h1></tr>
             <tr>
                 <th id="image">
                     <img src="../images/us-map-nonames.png" alt="temp image" width="500px"> 
@@ -63,6 +64,11 @@
         <div class="newstatebutton">
             <button id='newstatebutton'>New State</button>
         </div>
+
+        <table style="text-align: center; margin: auto;padding-top: 5px">
+            <tr id="awards">
+            </tr>
+        </table>
         
     </body>
     <script src="./state-match.js"></script>

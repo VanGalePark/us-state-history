@@ -182,7 +182,9 @@ function init() {
         ["In San Francisco, burying the dead has been illegal since 1901. Space was limited and real estate was<br>" +
         "high in demand, even back then, so the city outlawed burials and moved all cemeteries to a neighboring<br>" +
         "town, Colma, California. The dead in the town outnumber the living 1000 to 1.<br>" +
-        "Don't go there during a zombie apocalypse."]],
+        "Don't go there during a zombie apocalypse.",
+    
+        "California has the biggest county, San Bernardino County, with 61.95 square miles."]],
 
         //connecticut
         ["Connecticut", "CT", "Constitution State", 
