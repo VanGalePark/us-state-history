@@ -364,23 +364,79 @@ function init() {
         'against the law.']],
 
         //nevada
-        ["Nevada", "NV", "Silver State", []],
+        ["Nevada", "NV", "Silver State", 
+        ['California is known as the Golden State, but most U.S. gold comes from Nevada.',
+    
+        'Only 18 states have an official state grass. Nevada and Utah share the same one - Indiana ricegrass, a popular food among<br>' +
+        'bison, jackrabbits, and people on gluten-free diets!',
+    
+        'In Spanish, "nevada" means "snow-capped". If you say the state\'s name with the spanish pronunciation, Nev AH da, you most<br>' +
+        'don\'t live there. Locals pronounce it Nev AD a.',
+    
+        'Nevada is the driest state in the U.S. with less than 10 inches of rain per year.',
+    
+        'Reno is farther west than Los Angeles!']],
 
         //new hampshire
-        ["New Hampshire", "NH", "Granite State", []],
+        ["New Hampshire", "NH", "Granite State", 
+        ['In 1833 the first free public library in the U.S. was established in Peterborough,<br> and it still stands today!',
+    
+        'New Hampshire\'s state flower is the purple lilac! <br>' +
+        '<img src="https://www.almanac.com/sites/default/files/styles/primary_image_in_article/public/images/photo_11437.jpg?itok=BBlDDg1N" alt="purple lilacs" width="400px" >',
+    
+        'New Hampshire is nicknamed the Granite State because it has a history of granite mining.',
+    
+        'New Hampshire\'s state motto is "Live Free or Die". The motto comes from a statement written by the Revolutionary General John Stark,<br>'+
+        'hero of the Battle of Bennington.',
+    
+        'New Castle is the smallest town in New Hampshire. It covers .8 square miles, or 512 acres.']],
 
         //new jersey
         ["New Jersey", "NJ", "Garden State", 
-        ["New Jersey was the first state to abolish the death penalty for all crimes."]],
+        ["New Jersey was the first state to abolish the death penalty for all crimes.",
+    
+        'New Jersey has the most diners in the world and is often referred to as the "Diner Capital of the World".',
+    
+        'The street names in Monopoly board games are named after the actual streets in Atlantic City.',
+    
+        'New Jersey\'s state bug is the honey bee!<br>' +
+        '<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRhuZhtgUHTKWc9mBaZC4r5UphVlf7vhcxUYelB2o_hoOkQFapO&usqp=CAU" alt="honey bee" width="400px">',
+    
+        'New Jersey was the very first state to sign the Bill of Rights.',
+    
+        'New Jersey has a spoon museum that has over 5,400 spoons. It can be found at Lambert Castle.',
+    
+        'The official dinosaur of New Jersey is the hadrosaurus! <br>' +
+        '<img src="https://vignette.wikia.nocookie.net/cooldinofacts/images/e/eb/Hadrosaurus.jpg/revision/latest/scale-to-width-down/400?cb=20111205142107" alt="hadrosaurus" width="400px">']],
 
         //new mexico
         ["New Mexico", "NM", "Land of Enchantment", 
         ["You can be in Colorado, Arizona, New Mexico, and Utah all at the same time. New Mexico's northwest<br>" +
         "corner borders the three states and is the only place in the US where the corners of four states<br>" +
-        "meet."]],
+        "meet.",
+    
+        'You can see five different states from the top of Capulin Volcano.',
+    
+        'Before 2010, "idiots" were not allowed to vote in New Mexico. Before, "idiots" were people with mental illness,<br>' +
+        'or people who were considered insane.',
+    
+        '<br>New Mexico has more cows than people.<br>' +
+        '<img src="https://s3-wp-lyleprintingandp.netdna-ssl.com/wp-content/uploads/2018/01/09060054/cow-354428_1280.jpg" alt="cow" width="400px">']],
 
         //new york
-        ["New York", "NY", "Empire State", []], 
+        ["New York", "NY", "Empire State", 
+        ['It is illegal to honk your car horn in a non emergency. You can get up to a $350 fine for <i>any</i> unnecessary<br>'+
+        'car noises. This includes a car alarm.',
+    
+        'New Yorkers bite 10 times more people than sharks do worldwide each year.',
+    
+        'There are more women than men in New York City.',
+    
+        'The Empire State building gets hit by lightning about 23 times per year.',
+    
+        'New York City is the largest city in the United States.']],
+        
+        //north carolina
         ["North Carolina", "NC", "Tar Heel State", []],
         ["North Dakota", "ND", "Peace Garden State", []],
         ["Ohio", "OH", "Buckeye State", []],
