@@ -434,13 +434,95 @@ function init() {
     
         'The Empire State building gets hit by lightning about 23 times per year.',
     
-        'New York City is the largest city in the United States.']],
+        'New York City is the largest city in the United States.',
+    
+        'There is a birth in New York City every 4.4 minutes.']],
         
         //north carolina
-        ["North Carolina", "NC", "Tar Heel State", []],
-        ["North Dakota", "ND", "Peace Garden State", []],
-        ["Ohio", "OH", "Buckeye State", []],
+        ["North Carolina", "NC", "Tar Heel State", 
+        ['Fayetteville, North Carolina is home to the first miniature golf course.',
+    
+        'The Venus Fly Trap is only found in two American states, North Carolina and South Carolina.<br>'+
+        'It\'s native to Hampstead, North Carolina.',
+    
+        'North Carolina is the largest producer of sweet potatoes in the nation.',
+    
+        'The state\'s motto is "Esse quam videri", which means "To be, rather than to seem".',
+    
+        'US presidents James K. Polk, Andrew Jackson, and Andrew Johnson were all from Noth Carolina.',
+    
+        'North Carolina became the 12th state to join the Union on November 21, 1789, and as of<br>' +
+        'May 20, 1861, it became the 10th state to secede from it.',
+    
+        'North Carolina produces between 15 and 20 percent of the nation\'s real Christmas trees.']],
+
+        //north dakota
+        ["North Dakota", "ND", "Peace Garden State", 
+        ['North Dakota is the least visited state in America.',
+    
+        'Lewis and Clark spent more time in North Dakota than in any other place they visited on<br>' +
+        'their expedition.',
+    
+        'On February 17, 2007, 8,962 people made snow angels at the state capital grounds, beating the<br>'+
+        'world record for the most snow angels made simultaneously in one place. The previous record was<br>'+
+        '3,784 snow angels at Michigan Technological University the previous year.',
+    
+        'Less than 1% of North Dakota is forest, which is the smallest amount of any state.',
+    
+        'There is a sport in North Dakota for racing lawn mowers! Mowers get customized enough that<br>'+
+        'they can reach speeds of 60 mph, compared to the 5pm they would usually do in your backyard.',
+    
+        'North Dakota produces more honey than any other state.',
+    
+        'There is a highway sculpture named "Geese in Flight" that holds the Guinness World Record<br>'+
+        'for the largest metal sculpture in the world. Made in 2001, it\'s 156 feet long, 100 feet<br>'+ 
+        'tall, and weights 75 tons.<br>'+
+        '<img src="https://img.geocaching.com/waymarking/display/7e42ebd5-6583-4dd9-af85-768310800452.jpg" alt="Geese in Flight" width="400px">']],
+
+        //ohio
+        ["Ohio", "OH", "Buckeye State", 
+        ['7 of our 45 presidents have been from Ohio.<br>'+
+            'Ulysses S. Grant<br>'+
+            'Rutherford B. Hayes<br>'+
+            'James A. Garfield<br>'+
+            'Benjamin Harrison<br>'+
+            'William McKinley<br>'+
+            'William Howard Taft<br>'+
+            'Warren G. Harding<br>',
+        
+        'In honor of William McKinley, the official state flower is the red carnation. He liked<br>'+
+        'to keep a red carnation in his lapel, and then minutes before he was shot in 1901, he gave<br>'+
+        'a red carnation to a little girl.<br>'+
+        '<img src="https://cdn11.bigcommerce.com/s-j5bw4sasgt/images/stencil/1280x1280/products/1158/2899/_22A2309%20copy__74640.1553806390.jpg?c=2&imbypass=on" alt="red carnation" width="400px">',
+    
+        'The candy Life Savers were made by Ohio candymaker Clarence Crane. He was watching<br>'+
+        'a pill-making machine quickly pop out pellets and realized he could make mints the same<br>'+
+        'way! The machine had a defect that punched a hole in the middle of the round, but he took<br>'+
+        'advantage of it!',
+    
+        'Lake Erie was mentioned in an early version of the Dr. Suess book "The Lorax",<br> '+
+        '<i>"They\'ll walk on their fins and get woefully weary in search of some water that<br>'+
+        'isn\'t so smeary. I hear things are just as bad up in Lake Erie."</i> Conditions<br>' + 
+        'in the lake had improved by the 1980s, so employees at Ohio Sea Grant asked<br>'+
+        'Dr. Suess to change his prose on that page and he complied.',
+    
+        'Newark, Ohio might be the only place in the world where one can work in a basket.<br>'+
+        '<img width="400px" src="https://images2.minutemediacdn.com/image/upload/c_fit,f_auto,fl_lossy,q_auto,w_728/v1555914913/shape/mentalfloss/basket.jpg" alt="big basket building">',
+    
+        'The world\'s largest cuckoo clock is in Sugarcreek, it\'s fully functional and known as<br>'+
+        'the "Little Switzerland of Ohio".',
+    
+        'The Cuyahoga River has caught on fire at least 13 times but most famously on June 22, 1969.<br>'+
+        'The water was heavily polluted and some bits of oil slicked debris caught fire by sparks<br>'+
+        'caused by a passing train. It caused $100,000 worth of damage to two railroad bridges.<br>'+
+        'Congress was inspired to clean up the pollution and established the Environmental Protection<br>'+
+        'Agency (EPA).<br>'+
+        '<img src="https://cen.acs.org/content/dam/cen/97/24/WEB/09724-cover-fire1cxd.jpg" alt="Cuyahoga River" width="400px">']],
+
+        //oregon
         ["Oregon", "OR", "Beaver State", []],
+
+        //pennsylvania
         ["Pennsylvania", "PA", "Keystone State", []],
 
         //rhode island
@@ -449,9 +531,13 @@ function init() {
     
         "This state was the last of the original 13 colonies to become a state."]],
 
-
+        //south carolina
         ["South Carolina", "SC", "Palmetto State", []],
+
+        //south dakota
         ["South Dakota", "SD", "Mouth Rushmore State", []],
+
+        //tennessee
         ["Tennessee", "TN", "Volunteer State", []],
 
         //texas
