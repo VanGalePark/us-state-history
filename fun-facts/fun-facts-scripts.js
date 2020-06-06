@@ -591,10 +591,23 @@ function init() {
         "This state was the last of the original 13 colonies to become a state."]],
 
         //south carolina
-        ["South Carolina", "SC", "Palmetto State", []],
+        ["South Carolina", "SC", "Palmetto State", 
+        ['South Carolina is the only U.S. state that grows tea.',
+    
+        'South Carolina\'s official state flower is the Yellow Jessamine. The flower has poisoned<br>'+
+        'children who have mistaken the flower for honeysuckle, and the nectar can kill honey bees.<br>'+
+        '<img src="https://www.sciway.net/i/sc-state-flower-yellow-jessamine.jpg" alt="yellow jessamine" width="400px">',
+    
+        'The official state dance is the Shag.',
+
+        'On average about 11 tornadoes touch down in South Carolina each year since 1950.',
+    
+        'South Carolina doesn\'t have any professional sports teams.']],
 
         //south dakota
-        ["South Dakota", "SD", "Mouth Rushmore State", []],
+        ["South Dakota", "SD", "Mouth Rushmore State", 
+        ['Belle Fourche, South Dakota is 20 miles south of the geographical<br>'+
+        'center of the United States.']],
 
         //tennessee
         ["Tennessee", "TN", "Volunteer State", []],
