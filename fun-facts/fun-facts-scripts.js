@@ -574,7 +574,7 @@ function init() {
         'role in colonial history.<br>'+
         '<img src="https://www.legalgenealogist.com/wordpress/wp-content/uploads/2018/05/Keystone.jpg" alt="keystone" width="400px">',
     
-        'Pennsylvania\'s official state animal is the white-tailed deer.'+
+        'Pennsylvania\'s official state animal is the white-tailed deer.<br>'+
         '<img src="https://arc-anglerfish-arc2-prod-advancelocal.s3.amazonaws.com/public/O4OWKF2KTRCRLGZZAS7ZXVTMVM.JPG" alt="white tailed deer" width="400px">',
     
         'Pennsylvania is the only one of the original 13 colonies that is not bordered by the<br>'+
@@ -607,10 +607,29 @@ function init() {
         //south dakota
         ["South Dakota", "SD", "Mouth Rushmore State", 
         ['Belle Fourche, South Dakota is 20 miles south of the geographical<br>'+
-        'center of the United States.']],
+        'center of the United States.',
+    
+        'Mount Rushmore took 14 years and $1,000,000 to build.',
+    
+        'One of the largest and most complete skeletal remains of a T-Rex on Earth was<br>'+
+        'excavated near Faith, SD.',
+    
+        'The prairie rattlesnake is the only venomous snake native to South Dakota.<br>'+
+        '<img src="https://loe.org/content/2014-01-10/20-Prairie-Rattlesnake----I-see-you;-I-see-your-heat;-I-taste-your-scent...jpg" alt="prairie rattlesnake" width="400px">',
+    
+        'Huron, South Dakota is home to the world\'s largest pheasant.<br>'+
+        '<img src="https://www.roadsideamerica.com/attract/images/sd/SDHURpheasant_clower_620x300.jpg" alt="world\'s largest pheasant" width="400px">']],
 
         //tennessee
-        ["Tennessee", "TN", "Volunteer State", []],
+        ["Tennessee", "TN", "Volunteer State", 
+        ['Tennessee ties Missouri for the most neighboring states, each with 8 border states.',
+    
+        'Tennessee is the home of Mountain Dew. In the 1940s Barney and Ally Hartman developed the soft drink as a<br>'+
+        'soda to mix with whiskey.',
+    
+        'Kingston, Tennessee was the state capital for only one day, September 21, 1807',
+    
+        'Tennessee got it\'s nickname for its participation in the Battle of New Orleans during the war of 1812.']],
 
         //texas
         ["Texas", "TX", "Lone Star State", 
@@ -762,7 +781,7 @@ function init() {
             if(!stateChecker.includes(searchLower)) {
                 error.innerHTML = `
                 <div>
-                    <p>Sorry I'm not sure the state <u>${search}</u> exists!</p>
+                    <p>Sorry I don't have any fun facts for <u>${search}</u></p>
                 </div>
                 `
             } else {
