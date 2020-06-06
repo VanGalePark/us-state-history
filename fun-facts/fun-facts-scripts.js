@@ -407,7 +407,10 @@ function init() {
         'New Jersey has a spoon museum that has over 5,400 spoons. It can be found at Lambert Castle.',
     
         'The official dinosaur of New Jersey is the hadrosaurus! <br>' +
-        '<img src="https://vignette.wikia.nocookie.net/cooldinofacts/images/e/eb/Hadrosaurus.jpg/revision/latest/scale-to-width-down/400?cb=20111205142107" alt="hadrosaurus" width="400px">']],
+        '<img src="https://vignette.wikia.nocookie.net/cooldinofacts/images/e/eb/Hadrosaurus.jpg/revision/latest/scale-to-width-down/400?cb=20111205142107" alt="hadrosaurus" width="400px">',
+    
+        'New Jersey is one of two states that don\'t let you pump your own gas.<br>'+
+        'The other being Oregon.']],
 
         //new mexico
         ["New Mexico", "NM", "Land of Enchantment", 
@@ -520,10 +523,66 @@ function init() {
         '<img src="https://cen.acs.org/content/dam/cen/97/24/WEB/09724-cover-fire1cxd.jpg" alt="Cuyahoga River" width="400px">']],
 
         //oregon
-        ["Oregon", "OR", "Beaver State", []],
+        ["Oregon", "OR", "Beaver State", 
+        ['Portland, Oregon has more breweries than any other city in the world. The city has<br>'+
+        'over 60 breweries.',
+    
+        'Crater Lake is the deepest in the US and was formed more than 6500 years ago within the remains<br>'+
+        'of an ancient volcano.',
+    
+        'Eugene, Oregon was the first city to have one-way streets.',
+    
+        'Oregon has the most ghost towns in the US with over 200 ghost towns. One of them is named<br>'+
+        'Idiotville.',
+    
+        'Oregon has an official state nut, the hazelnut!<br>'+
+        '<img src="https://fitnessmedia.azureedge.net/media/3861/hazelnuts-blog.jpg" alt="hazelnuts" width="400px">',
+    
+        'Oregon is one of two states that don\'t allow you to pump your own gas. The other state<br>'+
+        'is New Jersey.',
+    
+        'Springfield, Oregon is the real life inspiration for the Simpson\'s hometown.',
+    
+        'The world\'s tallest barber shop pole is in Forest Grove, Oregon. The pole is 40 feet tall<br>'+
+        'and was inspired by the pole in San Antonio, Texas. Chuck Olsen, the man who built the 40<br>'+
+        'foot tall pole, said "I thought if treeless Texas could put up the world\'s tallest barber<br>'+
+        'pole, we out here should be able to do better than that."<br>'+
+        '<img src="https://media-cdn.tripadvisor.com/media/photo-p/0d/64/45/e5/there-it-is.jpg" alt="worlds tallest barber shop pole" width="400px">',
+    
+        'The Oregon State flag is the only flag in the US with a different design on each side.<br>'+
+        '<img src="https://flagloft.com/wp-content/uploads/2015/04/OREGON-416x244.jpg" alt="oregon flag" width="400px">']],
 
         //pennsylvania
-        ["Pennsylvania", "PA", "Keystone State", []],
+        ["Pennsylvania", "PA", "Keystone State", 
+        ['The founder of the Pennsylvania Colony, William Penn, died in 1718 but didn\'t become a<br>'+
+        'US citizen until 1984. In honor of their contributions to American history, Penn and his<br>'+
+        'wife Hannah were granted honorary citizenship in the 1980s.',
+    
+        'The official state dog is the Great Dane.<br>'+
+        '<img src="https://cdn.orvis.com/images/DBS_GreatDane_1280.jpg" alt="great dane" width="400px">',
+    
+        'A coal mine in Centralia, Pennsylvania has been on fire since 1962. According to the state\'s<br>'+
+        'Department of Environmental Protection, the fire could burn for another century if left<br>'+
+        'uncontrolled. The town once had over 1,000 residents but as of 2020 it has 11.',
+    
+        'The word "Pennsylvania" is misspelled on the Liberty Bell. The bell was made before the<br>'+
+        'founders had agreed on the official spelling.<br>'+
+        '<img src="https://pbs.twimg.com/media/DiZJaAqWAAEAWIe.jpg" alt="liberty bell" width="400px">',
+    
+        'A keystone is a piece of stone at the center of an arch, that helps keep all the other<br>'+
+        'stones in place. Pennsylvania was nicknamed the Keystone State because of its central<br>'+
+        'role in colonial history.<br>'+
+        '<img src="https://www.legalgenealogist.com/wordpress/wp-content/uploads/2018/05/Keystone.jpg" alt="keystone" width="400px">',
+    
+        'Pennsylvania\'s official state animal is the white-tailed deer.'+
+        '<img src="https://arc-anglerfish-arc2-prod-advancelocal.s3.amazonaws.com/public/O4OWKF2KTRCRLGZZAS7ZXVTMVM.JPG" alt="white tailed deer" width="400px">',
+    
+        'Pennsylvania is the only one of the original 13 colonies that is not bordered by the<br>'+
+        'Atlantic Ocean.',
+    
+        'The famous Groundhog\'s Day groundhog, Punxsutawney Phil, makes his home in<br>'+
+        'Punxsutawney, Pennsylvania. Every year around Groundhog\'s day, the town has a two-day<br>'+
+        'celebration with art shows, music, and more.']],
 
         //rhode island
         ["Rhode Island", "RI", "Ocean State", 
@@ -573,12 +632,40 @@ function init() {
         "#94abff", "#94caff", "#94f1ff", "#b3ffed", "#b5ffd4", "#94ffa0", "#c1ffb5",
         "#daffb5", "#f4ffb5", "#fff3b5", "#ffd8b5", "#ffc4b5"]
 
+    let currentFact = []
+    let currentState = []
+
+    let currentSearch = []
+
     randomButton.addEventListener("click", function() {
         let index = Math.round(Math.random()*49);
         let factIndex = Math.round(Math.random()*(factsArray[index][3].length-1));
-        let colorIndex = Math.round(Math.random()*(colors.length-1));
-        
-        fact.innerHTML = `
+        let colorIndex = Math.round(Math.random()*(colors.length-1));        
+
+        currentFact.unshift(factIndex)
+        currentState.unshift(index)
+
+        if(currentFact[1] === factIndex && currentState[1] === index) {
+            let newIndex = Math.round(Math.random()*49);
+            let newFact = Math.round(Math.random()*(factsArray[newIndex][3].length-1));
+
+            fact.innerHTML = `
+            <div>
+                <table style="margin: auto; background-color: ${colors[colorIndex]}; border-radius: 8px; border-style: dashed;">
+                    <tr>
+                        <th>
+                            <h2 style="font-size: 60px; line-height: 0px; font-weight: bold;"><a href='../states/${factsArray[newIndex][0]}.html'>${factsArray[newIndex][0]}</a> - ${factsArray[newIndex][1]}</h2>
+                            <p style="font-size: 25px;"> The ${factsArray[newINdex][2]} </p> 
+                            <p style="line-height: 25px; padding: 5px;"> ${factsArray[newIndex][3][newFact]} </p>       
+                        </th>
+                    </tr>
+                </table>
+            </div>
+            `
+
+        } else {
+
+            fact.innerHTML = `
             <div>
                 <table style="margin: auto; background-color: ${colors[colorIndex]}; border-radius: 8px; border-style: dashed;">
                     <tr>
@@ -591,6 +678,7 @@ function init() {
                 </table>
             </div>
             `
+        }
 
         error.innerHTML = `
             <div></div>
@@ -603,24 +691,48 @@ function init() {
         let searchLower = search.toLowerCase();
         
         for(i = 0; i < factsArray.length; i++) {
-            let factIndex = Math.round(Math.random()*(factsArray[i][3].length-1));      
+            let factIndex = Math.round(Math.random()*(factsArray[i][3].length-1)); 
+            currentSearch.unshift(factIndex)     
 
-            if(factsArray[i][0].toLowerCase() === searchLower) {
+            if(factsArray[i][0].toLowerCase() === searchLower || factsArray[i][1].toLowerCase() === searchLower) {
                 let colorIndex = Math.round(Math.random()*(colors.length-1));
-                fact.innerHTML = `
-                <div>
-                    <table style="margin: auto; background-color: ${colors[colorIndex]}; border-radius: 8px; border-style: dashed;">
-                        <tr>
-                            <th>
-                                <h2 style="font-size: 60px; line-height: 0px;"><a href='../states/${factsArray[i][0]}.html'>${factsArray[i][0]}</a> - ${factsArray[i][1]}</h2>
-                                <p style="font-size: 25px; line-height: 15px;"> The ${factsArray[i][2]} </p> 
-                                <p style="line-height: 22px; padding: 5px;"> ${factsArray[i][3][factIndex]} <br></p>
-                                <p style="font-size: 12px;"><br><u>If you press search again, you can get a new fact for the same state!</u></p>       
-                            </th>
-                        </tr>
-                    </table>
-                </div>
-                `
+
+                if(currentSearch[1]===factIndex) {
+                    let newFact = Math.round(Math.random()*(factsArray[i][3].length-1));
+
+                    fact.innerHTML = `
+                    <div>
+                        <table style="margin: auto; background-color: ${colors[colorIndex]}; border-radius: 8px; border-style: dashed;">
+                            <tr>
+                                <th>
+                                    <h2 style="font-size: 60px; line-height: 0px;"><a href='../states/${factsArray[i][0]}.html'>${factsArray[i][0]}</a> - ${factsArray[i][1]}</h2>
+                                    <p style="font-size: 25px; line-height: 15px;"> The ${factsArray[i][2]} </p> 
+                                    <p style="line-height: 22px; padding: 5px;"> ${factsArray[i][3][newFact]} <br></p>
+                                    <p style="font-size: 12px;"><br><u>If you press search again, you can get a new fact for the same state!</u></p>       
+                                </th>
+                            </tr>
+                        </table>
+                    </div>
+                    `
+
+                } else {
+                    fact.innerHTML = `
+                    <div>
+                        <table style="margin: auto; background-color: ${colors[colorIndex]}; border-radius: 8px; border-style: dashed;">
+                            <tr>
+                                <th>
+                                    <h2 style="font-size: 60px; line-height: 0px;"><a href='../states/${factsArray[i][0]}.html'>${factsArray[i][0]}</a> - ${factsArray[i][1]}</h2>
+                                    <p style="font-size: 25px; line-height: 15px;"> The ${factsArray[i][2]} </p> 
+                                    <p style="line-height: 22px; padding: 5px;"> ${factsArray[i][3][factIndex]} <br></p>
+                                    <p style="font-size: 12px;"><br><u>If you press search again, you can get a new fact for the same state!</u></p>       
+                                </th>
+                            </tr>
+                        </table>
+                    </div>
+                    `
+
+                }
+                
             } else if(search === ""){
                 fact.innerHTML = `
                 <div>
@@ -629,8 +741,11 @@ function init() {
                 `
             }
 
+            //creates an array of all 50 states in lowercase form
             stateChecker.push(factsArray[i][0].toLowerCase());
+            stateChecker.push(factsArray[i][1].toLowerCase())
 
+            //checks if the user's search is in the array
             if(!stateChecker.includes(searchLower)) {
                 error.innerHTML = `
                 <div>
